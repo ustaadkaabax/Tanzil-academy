@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanzil Academy</title>
+    <link rel="icon" type="image/png" href="https://iili.io/fb3b0kN.md.png">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Amiri (Naskh style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(250deg, #0a0a0a, #3a4452);
+            font-family: 'Amiri', serif;
+            /* Apply Naskh font */
+        }
+
+        /* smooth glass effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+        }
+    </style>
+</head>
+
+<body class="text-white">
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-50">
+        <nav class="glass">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="flex items-center justify-between py-4 ">
+                    <!-- Brand -->
+                    <a href="#home" class="w-[30%] flex items-center gap-3">
+                        <img src="https://i.postimg.cc/D8kV5CYj/logo.png" alt="Tanzil Academy"
+                            class="h-16 w-16 rounded-xl object-cover" />
+                        <div class="w-[100%] leading-tight">
+                            <div class="text-[1.3rem] text-white/70 font-bold font-Amiri">أكاديمية التنزيل</div>
+                            <div class="font-extrabold tracking-wide text-[0.8rem] font-Amiri">
+                                Tanzil Academy</div>
+
+                        </div>
+                    </a>
+
+                    <!-- Desktop menu -->
+                    <div class="hidden w-[100%] md:flex items-center gap-6 text-lg">
+                        <div class="w-[100%] flex justify-center gap-16">
+                            <a class="hover:text-emerald-300 transition" href="#services">الخدمات</a>
+                            <a class="hover:text-emerald-300 transition" href="#about">عن الأكاديمية</a>
+                            <a class="hover:text-emerald-300 transition" href="#contact">تواصل معنا</a>
+                        </div>
+                        <a class="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2 font-bold hover:bg-emerald-600 transition"
+                            href="https://wa.me/252614373617" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Whatsapp
+                        </a>
+                    </div>
+
+                    <!-- Mobile button -->
+                    <button id="menuBtn"
+                        class="md:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-white/15 hover:bg-white/10 transition"
+                        aria-label="Open Menu">
+                        <i id="menuIcon" class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile menu -->
+                <div id="mobileMenu" class="md:hidden hidden pb-4">
+                    <div class="grid gap-2 text-lg">
+                        <a class="rounded-xl px-3 py-2 hover:bg-white/10 transition" href="#services">الخدمات</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-white/10 transition" href="#about">عن الأكاديمية</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-white/10 transition" href="#contact">تواصل معنا</a>
+                        <a class="rounded-xl px-3 py-2 bg-emerald-500 font-bold hover:bg-emerald-600 transition inline-flex items-center gap-2"
+                            href="https://wa.me/252614373617" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-16">
+            <div class="grid items-center gap-8 md:grid-cols-2">
+                <div>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/80">
+                        <img class="w-[100%] object-cover rounded-full" src="https://iili.io/fb3b0kN.md.png" alt="">
+                    </div>
+
+                    <h1 class="mt-4 text-3xl md:text-5xl font-extrabold leading-tight">
+                        تعلم القرآن بشكل منهجي، <span class="text-emerald-300">متأني ومتقن</span>
+                    </h1>
+
+                    <p class="mt-4 text-white/75 leading-relaxed text-lg">
+                        تقدم Tanzil Academy تعليماً مؤسساً على خطة مدروسة، مع معلمين ذوي خبرة، وطريقة تعليمية ميسرة
+                        تساعد الطالب على القراءة، الحفظ، تصحيح التلاوة، وتعلم الأذكار.
+                    </p>
+
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="#services"
+                            class="rounded-xl bg-white/10 px-5 py-3 font-bold hover:bg-white/15 transition inline-flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i> ابدأ الآن
+                        </a>
+                        <a href="#contact"
+                            class="rounded-xl border border-white/15 px-5 py-3 font-bold hover:bg-white/10 transition inline-flex items-center gap-2">
+                            <i class="fa-solid fa-phone"></i> تواصل معنا
+                        </a>
+                    </div>
+
+                    <div class="mt-8 grid gap-3 sm:grid-cols-3 text-white/80">
+                        <div class="glass rounded-2xl p-4">
+                            <div class="font-bold text-lg"><i class="fa-solid fa-book-quran text-emerald-300"></i>
+                                القراءة</div>
+                            <div class="text-sm text-white/70 mt-1">القاعدة النورانية والقراءة الصحيحة</div>
+                        </div>
+                        <div class="glass rounded-2xl p-4">
+                            <div class="font-bold text-lg"><i class="fa-solid fa-brain text-emerald-300"></i> الحفظ
+                            </div>
+                            <div class="text-sm text-white/70 mt-1">حفظ القرآن الكريم</div>
+                        </div>
+                        <div class="glass rounded-2xl p-4">
+                            <div class="font-bold text-lg"><i class="fa-solid fa-wave-square text-emerald-300"></i>
+                                التجويد</div>
+                            <div class="text-sm text-white/70 mt-1">تصحيح التلاوة والأداء</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass rounded-3xl p-3">
+                        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=1000&auto=format&fit=crop"
+                            alt="Quran Study" class="w-full rounded-2xl object-cover h-80" />
+                    </div>
+
+                    <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                        <div class="glass rounded-2xl p-4">
+                            <div class="text-sm text-white/70">تعليم تفاعلي</div>
+                            <div class="mt-2 overflow-hidden rounded-xl">
+                                <img src="https://jeelalarabiya.academy/wp-content/uploads/2024/10/732a145e-7475-4bc8-a4d1-4cb44396fde41.jpg"
+                                    alt="Classroom" class="h-40 w-full object-cover" />
+                            </div>
+                        </div>
+
+                        <div class="glass rounded-2xl p-4">
+                            <div class="text-sm text-white/70">تركيز واهتمام</div>
+                            <div class="mt-2 overflow-hidden rounded-xl">
+                                <img src="https://alazharmessage.com/wp-content/uploads/2024/11/%D8%AA%D8%AD%D9%81%D9%8A%D8%B8-%D8%A3%D8%B7%D9%81%D8%A7%D9%84%D9%83-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86-%D8%A3%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86.jpg"
+                                    alt="Studying" class="h-40 w-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-10 md:py-16">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="flex items-end justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold">
+                        ماذا تتعلم معنا؟ <a class="text-emerald-300" href="#services">(الخدمات)</a>
+                    </h2>
+                    <p class="mt-2 text-white/75 max-w-2xl text-lg">
+                        برامجنا التعليمية شاملة تغطي كافة الجوانب الأساسية لطالب القرآن الكريم.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- 1 -->
+                <div class="glass rounded-3xl p-5">
+                    <div
+                        class="h-12 w-12 rounded-2xl bg-emerald-500/15 flex items-center justify-center border border-white/10">
+                        <i class="fa-solid fa-book-open text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="mt-4 font-bold text-xl">القراءة والكتابة</h3>
+                    <p class="mt-2 text-white/75">
+                        تعلم أساسيات القراءة، الحركات، والكتابة لتتمكن من تلاوة القرآن بشكل صحيح من البداية.
+                    </p>
+                </div>
+
+                <!-- 2 -->
+                <div class="glass rounded-3xl p-5">
+                    <div
+                        class="h-12 w-12 rounded-2xl bg-emerald-500/15 flex items-center justify-center border border-white/10">
+                        <i class="fa-solid fa-brain text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="mt-4 font-bold text-xl">حفظ القرآن الكريم</h3>
+                    <p class="mt-2 text-white/75">
+                        خطة حفظ متقنة، مراجعة دورية، ومتابعة دقيقة لضمان ثبات الحفظ وإتقانه.
+                    </p>
+                </div>
+
+                <!-- 3 -->
+                <div class="glass rounded-3xl p-5">
+                    <div
+                        class="h-12 w-12 rounded-2xl bg-emerald-500/15 flex items-center justify-center border border-white/10">
+                        <i class="fa-solid fa-wave-square text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="mt-4 font-bold text-xl">تصحيح التلاوة (التجويد)</h3>
+                    <p class="mt-2 text-white/75">
+                        دراسة أحكام التجويد والمخارج والصفات لتحسين التلاوة وتزيين الصوت بالقرآن.
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="glass rounded-3xl p-5">
+                    <div
+                        class="h-12 w-12 rounded-2xl bg-emerald-500/15 flex items-center justify-center border border-white/10">
+                        <i class="fa-solid fa-hands-praying text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="mt-4 font-bold text-xl">الأذكار والآداب</h3>
+                    <p class="mt-2 text-white/75">
+                        حفظ الأذكار اليومية المهمة، وفهم معانيها، وتعلم الآداب الإسلامية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-10 md:py-16">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="grid gap-8 md:grid-cols-2">
+                <div class="glass rounded-3xl p-6">
+                    <h2 class="text-2xl md:text-3xl font-extrabold">
+                        نبذة عنا <a class="text-emerald-300" href="#about">(Tanzil Academy)</a>
+                    </h2>
+                    <p class="mt-4 text-white/80 leading-relaxed text-lg">
+                        Tanzil Academy هي منصة تعليمية رائدة تركز على تعليم القرآن الكريم وعلومه. نسعى لتقديم تعليم عالي
+                        الجودة يتناسب مع مستوى كل طالب، لضمان القراءة الصحيحة، والحفظ المتين، والتلاوة المتقنة.
+                    </p>
+                    <p class="mt-3 text-white/75 leading-relaxed text-lg">
+                        هدفنا هو بناء جيل مرتبط بكتاب الله، ومتمسك بالأذكار والتربية الصالحة. يتم التعليم عبر منهجية
+                        واضحة، ودروس تفاعلية، ومتابعة مستمرة.
+                    </p>
+                </div>
+
+                <div class="glass rounded-3xl p-6">
+                    <h3 class="text-xl font-extrabold">بيئة تعليمية متميزة</h3>
+                    <p class="mt-2 text-white/75">
+                        نحرص على توفير جو تعليمي محفز ومشجع للطلاب.
+                    </p>
+                    <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                        <div class="block overflow-hidden rounded-2xl border border-white/10">
+                            <img class="h-44 w-full object-cover"
+                                src="https://img.freepik.com/premium-photo/muslim-girl-reading-holy-book-quran-inside-mosque_606562-217.jpg"
+                                alt="Quran Reading">
+                        </div>
+                        <div class="block overflow-hidden rounded-2xl border border-white/10">
+                            <img class="h-44 w-full object-cover"
+                                src="https://i.pinimg.com/736x/90/e9/b5/90e9b5efd39565f2e914201a8dbbadf8.jpg"
+                                alt="Madrasah">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-10 md:py-16">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="glass rounded-3xl p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold">
+                            تواصل معنا
+                        </h2>
+                        <p class="mt-3 text-white/80 leading-relaxed text-lg">
+                            للتسجيل أو الاستفسار عن برامجنا، لا تتردد في التواصل معنا. نحن مستعدون لإرشادك واختيار
+                            البرنامج المناسب لك.
+                        </p>
+
+                        <div class="mt-4 space-y-2 text-white/85 text-lg">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-user text-emerald-300"></i>
+                                <span><b>Cimraan Axmed Kabah</b></span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-emerald-300"></i>
+                                <span dir="ltr">+252 61 4373617</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-globe text-emerald-300"></i>
+                                <span>tanzil.academy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-auto">
+                        <div class="text-sm text-white/70 mb-3">تابعنا على وسائل التواصل:</div>
+                        <div class="flex flex-wrap gap-3">
+                            <a class="h-11 w-11 rounded-2xl glass flex items-center justify-center hover:bg-white/10 transition"
+                                href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="h-11 w-11 rounded-2xl glass flex items-center justify-center hover:bg-white/10 transition"
+                                href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="h-11 w-11 rounded-2xl glass flex items-center justify-center hover:bg-white/10 transition"
+                                href="#" aria-label="X">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a class="h-11 w-11 rounded-2xl glass flex items-center justify-center hover:bg-white/10 transition"
+                                href="#" aria-label="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="h-11 w-11 rounded-2xl bg-emerald-500/20 border border-white/10 flex items-center justify-center hover:bg-emerald-500/30 transition"
+                                href="https://wa.me/252614373617" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                            </a>
+                        </div>
+
+                        <a href="https://wa.me/252614373617" target="_blank" rel="noopener"
+                            class="mt-5 w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-5 py-3 font-bold hover:bg-emerald-600 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            راسلنا على whatsapp
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-white/10" />
+
+                <footer class="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/60">
+                    <div>© <span id="year"></span> Tanzil Academy. جميع الحقوق محفوظة.</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-heart text-emerald-300"></i>
+                        <span>تم التصميم بحب وإتقان</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIXED WHATSAPP BUTTON -->
+    <a href="https://wa.me/252614373617" target="_blank" rel="noopener"
+        class="fixed bottom-5 left-5 z-50 h-14 w-14 rounded-2xl bg-emerald-500 shadow-lg shadow-black/30 flex items-center justify-center hover:bg-emerald-600 transition"
+        aria-label="WhatsApp" title="WhatsApp: +252 61 4373617">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
